@@ -5,8 +5,10 @@
 <h1>{{ title }} {{ ayaya }}</h1>
 <ul class="list-group">
   @each(post in posts)
-    <li class="list-group-item">{{ post.title }}</li>
-    <p >{{ post.body }}</p>
+    <li class="list-group-item">
+      <a href="/posts/{{ post.id }}">{{ post.title }}</a>
+    </li>
+
   @endeach
 </ul>
 @endsection
